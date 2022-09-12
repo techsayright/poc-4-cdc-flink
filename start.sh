@@ -32,9 +32,9 @@ sleep 10
 echo Starting all services------------------
 docker-compose up -d
 
-echo "Running KSQL Scripts(Please Wait)-------------------"
+echo "Running Flink Queries(Please Wait)-------------------"
 sleep 45
 
-./ksql_query.sh
+./flink_query.sh
 
 echo completed process

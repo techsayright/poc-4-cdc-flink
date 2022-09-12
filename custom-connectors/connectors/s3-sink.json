@@ -2,7 +2,7 @@
   "name": "s3-sink",
   "config": {
     "connector.class": "io.confluent.connect.s3.S3SinkConnector",
-    "format.class": "io.confluent.connect.s3.format.parquet.ParquetFormat",
+    "format.class": "io.confluent.connect.s3.format.avro.AvroFormat",
     "flush.size": 200,
     "schema.compatibility": "FULL",
     "s3.bucket.name": "darshan-new",
@@ -10,9 +10,9 @@
     "s3.object.tagging": true,
     "parquet.codec": "none",
     "s3.ssea.name": "AES256",
-    "topics.dir": "structure-data/kafka",
+    "topics.dir": "structure-data-f/kafka",
     "storage.class": "io.confluent.connect.s3.storage.S3Storage",
     "tasks.max": 1,
-    "topics": "CLASS_BOOST"
+    "topics": "CLASS_BOOOST"
   }
 }

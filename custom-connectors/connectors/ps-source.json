@@ -11,6 +11,8 @@
     "decimal.handling.mode": "string",
     "schema.whitelist": "public",
     "include.schema.changes": "true",
+    "value.converter": "org.apache.kafka.connect.json.JsonConverter",
+    "value.converter.schemas.enable": false,
     "plugin.name": "wal2json",
     "tasks.max": "1",
     "transforms": "unwrap",
